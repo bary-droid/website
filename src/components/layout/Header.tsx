@@ -25,25 +25,25 @@ export default function Header() {
         {/* Language button */}
         <button className="flex items-center gap-2 bg-white rounded-[20px] px-4 h-[40px]">
           <span className="font-semibold text-[16px] leading-[20px] text-text-primary">EN</span>
-          <Image src={iconArrowDown} alt="Select language" width={24} height={24} />
+          <Image src={iconArrowDown} alt="Select language" width={24} height={24} unoptimized />
         </button>
 
         {/* Center logo */}
         <div className="absolute left-1/2 -translate-x-1/2">
-          <Image src={logoWorldcom} alt="Worldcom Finance" width={170} height={40} className="h-[40px] w-auto" />
+          <Image src={logoWorldcom} alt="Worldcom Finance" width={170} height={40} className="h-[40px] w-auto" unoptimized />
         </div>
 
         {/* Right side */}
         <div className="flex items-center gap-6">
           <button className="flex items-center gap-1">
-            <Image src={iconLock} alt="" width={24} height={24} />
+            <Image src={iconLock} alt="" width={24} height={24} unoptimized />
             <span className="font-semibold text-[16px] leading-[20px] text-text-primary w-[120px] text-center">
               Login banking
             </span>
           </button>
           <button className="flex items-center gap-1">
             <span className="font-semibold text-[16px] leading-[20px] text-text-primary">Menu</span>
-            <Image src={iconMenu} alt="Menu" width={24} height={24} />
+            <Image src={iconMenu} alt="Menu" width={24} height={24} unoptimized />
           </button>
         </div>
       </div>

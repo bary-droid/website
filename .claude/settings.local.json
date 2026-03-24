@@ -39,7 +39,12 @@
       "Bash(curl -sL -o logo-max.png \"https://www.figma.com/api/mcp/asset/9e10a556-eb70-4d59-913e-04ddae3f9e8d\")",
       "Bash(curl -sL -o logo-bank-jerusalem.png \"https://www.figma.com/api/mcp/asset/cd28cbec-23c2-4ad3-8131-4c5c206257ba\")",
       "Bash(curl -sL -o social-facebook.png \"https://www.figma.com/api/mcp/asset/482bff0f-1d79-4ae8-86dc-f4a4cace6601\")",
-      "Bash(curl -sL -o social-instagram.png \"https://www.figma.com/api/mcp/asset/10a171a5-cfe7-483d-865a-3aa7868fad08\")"
+      "Bash(curl -sL -o social-instagram.png \"https://www.figma.com/api/mcp/asset/10a171a5-cfe7-483d-865a-3aa7868fad08\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where node:*)",
+      "Bash(where npx:*)",
+      "Bash(where npm:*)",
+      "Bash(npx tsc:*)"
     ]
   }
 }

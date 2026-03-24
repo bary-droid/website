@@ -6,19 +6,18 @@ import Button from "@/components/ui/Button";
 import {
   businessIllustration,
   clientLogo1,
-  clientLogo2,
   clientHolon,
   clientLogo3,
-  clientLogo4,
   clientLogo5,
+  clientLogo7,
 } from "@/lib/assets";
 
 const clientLogos = [
   { src: clientLogo1, alt: "City Time", width: 138, height: 32 },
   { src: clientHolon, alt: "Holon", width: 42, height: 32 },
   { src: clientLogo3, alt: "Good Pharm", width: 92, height: 32 },
-  { src: clientLogo4, alt: "Egged", width: 32, height: 32 },
-  { src: clientLogo5, alt: "Hadasa", width: 66, height: 32 },
+  { src: clientLogo5, alt: "Egged", width: 32, height: 32 },
+  { src: clientLogo7, alt: "Hadasa", width: 66, height: 32 },
 ];
 
 export default function BusinessSolutions() {
@@ -43,14 +42,14 @@ export default function BusinessSolutions() {
             <p className="font-medium text-[24px] text-text-primary">Our Clients</p>
             <div className="flex items-center justify-between w-full">
               {clientLogos.map((logo) => (
-                <Image
+                <img
                   key={logo.alt}
                   src={logo.src}
                   alt={logo.alt}
                   width={logo.width}
                   height={logo.height}
                   className="object-contain"
-                  style={{ width: logo.width, height: logo.height }}
+                  style={{ width: logo.width, height: 32 }}
                 />
               ))}
             </div>

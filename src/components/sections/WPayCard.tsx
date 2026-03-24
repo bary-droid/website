@@ -38,6 +38,7 @@ export default function WPayCard() {
                 height={18}
                 className="object-contain"
                 style={{ width: 68, height: 18 }}
+                unoptimized
               />
               <Image
                 src={logoBankJerusalem}

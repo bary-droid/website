@@ -18,19 +18,15 @@ export const transferCard4 = "/images/transfer-card-4.png";
 
 // Business Solutions (Section 3)
 export const businessIllustration = "/images/business-illustration.png";
-export const clientLogo1 = "/images/client-logo-1.png";
-export const clientLogo2 = "/images/client-logo-2.png";
-export const clientHolon = "/images/client-holon.png";
-export const clientLogo3 = "/images/client-logo-3.png";
-export const clientLogo4 = "/images/client-logo-4.png";
-export const clientLogo5 = "/images/client-logo-5.png";
-export const clientLogo6 = "/images/client-logo-6.png";
-export const clientLogo7 = "/images/client-logo-7.png";
-export const clientLogo8 = "/images/client-logo-8.png";
+export const clientLogo1 = "/images/client-logo-1.svg";
+export const clientHolon = "/images/client-holon.svg";
+export const clientLogo3 = "/images/client-logo-3.svg";
+export const clientLogo5 = "/images/client-logo-5.svg";
+export const clientLogo7 = "/images/client-logo-7.svg";
 
 // New Application (Section 4)
 export const appPhoneMockup = "/images/app-phone-mockup.png";
-export const glassLightBlob = "/images/glass-light-blob.png";
+export const glassLightBlob = "/images/glass-light-blob.svg";
 
 // Feature Cards
 export const featureDigitalWallet = "/images/feature-digital-wallet.png";
@@ -38,12 +34,12 @@ export const featureSimTopup = "/images/feature-sim-topup.png";
 
 // WPay Card (Section 5)
 export const wpayCards = "/images/wpay-cards.png";
-export const logoMax = "/images/logo-max.png";
+export const logoMax = "/images/logo-max.svg";
 export const logoBankJerusalem = "/images/logo-bank-jerusalem.png";
 
 // Layout
-export const logoWorldcom = "/images/logo-worldcom.png";
-export const logoWorldcomFooter = "/images/logo-worldcom-footer.png";
+export const logoWorldcom = "/images/logo-worldcom.svg";
+export const logoWorldcomFooter = "/images/logo-worldcom-footer.svg";
 
 // Icons
 export const iconMenu = "/images/icon-menu.svg";
@@ -53,9 +49,9 @@ export const iconMail = "/images/icon-mail.svg";
 export const iconPhone = "/images/icon-phone.svg";
 
 // Social
-export const socialFacebook = "/images/social-facebook.png";
-export const socialInstagram = "/images/social-instagram.png";
-export const socialLinkedin = "/images/social-linkedin.png";
+export const socialFacebook = "/images/social-facebook.svg";
+export const socialInstagram = "/images/social-instagram.svg";
+export const socialLinkedin = "/images/social-linkedin.svg";
 
 // App Store badges
 export const badgeGooglePlay = "/images/badge-google-play.png";

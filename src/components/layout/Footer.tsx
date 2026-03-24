@@ -39,13 +39,13 @@ export default function Footer() {
               </h3>
               <div className="flex flex-col gap-6">
                 <div className="flex items-center gap-2">
-                  <Image src={iconMail} alt="" width={24} height={24} />
+                  <Image src={iconMail} alt="" width={24} height={24} unoptimized />
                   <span className="text-[16px] leading-[24px] text-text-grey">
                     cs@worldcomfinance.com
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Image src={iconPhone} alt="" width={24} height={24} />
+                  <Image src={iconPhone} alt="" width={24} height={24} unoptimized />
                   <span className="text-[16px] leading-[24px] text-text-grey">
                     03-900-9823
                   </span>
@@ -59,9 +59,9 @@ export default function Footer() {
                 Social media
               </h3>
               <div className="flex items-center gap-4">
-                <Image src={socialFacebook} alt="Facebook" width={64} height={64} />
-                <Image src={socialInstagram} alt="Instagram" width={64} height={64} />
-                <Image src={socialLinkedin} alt="LinkedIn" width={64} height={64} />
+                <Image src={socialFacebook} alt="Facebook" width={64} height={64} unoptimized />
+                <Image src={socialInstagram} alt="Instagram" width={64} height={64} unoptimized />
+                <Image src={socialLinkedin} alt="LinkedIn" width={64} height={64} unoptimized />
               </div>
             </div>
 
@@ -74,6 +74,7 @@ export default function Footer() {
                   width={271}
                   height={63}
                   className="object-contain"
+                  unoptimized
                 />
               </div>
               <div className="flex items-center gap-3">

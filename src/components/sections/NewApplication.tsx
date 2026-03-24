@@ -91,7 +91,7 @@ export default function NewApplication() {
           >
             {/* Light blob decoration */}
             <div className="absolute -top-[63px] -left-[10px] w-[271px] h-[85px] pointer-events-none">
-              <Image src={glassLightBlob} alt="" fill className="object-cover" />
+              <Image src={glassLightBlob} alt="" fill className="object-cover" unoptimized />
             </div>
 
             {/* Inner blur reinforcement */}

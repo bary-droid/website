@@ -32,9 +32,9 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative max-w-[1920px] mx-auto px-[160px] h-full">
+      <div className="relative max-w-[1920px] mx-auto px-[160px] h-full flex items-center">
         {/* Text content - left side */}
-        <div className="absolute top-1/2 -translate-y-1/2 left-[160px] w-[924px]">
+        <div className="w-[50%] shrink-0">
           <motion.h1
             className="text-[96px] font-extrabold leading-normal text-text-primary"
             initial={{ opacity: 0, y: 30 }}
@@ -53,7 +53,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p
-            className="text-[24px] leading-[30px] tracking-[0.1px] text-text-primary text-center mt-6"
+            className="text-[24px] leading-[30px] tracking-[0.1px] text-text-primary text-left mt-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
@@ -72,22 +72,22 @@ export default function Hero() {
         </div>
 
         {/* Phone mockup - right side */}
-        <motion.div
-          className="absolute right-[160px] top-[212px]"
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ type: "spring", damping: 20, stiffness: 100, delay: 0.3 }}
-        >
-          <Image
-            src={heroPhoneMockup}
-            alt="Worldcom Finance mobile app"
-            width={837}
-            height={963}
-            priority
-            className="drop-shadow-[0_52px_96px_rgba(0,0,0,0.25)]"
-            style={{ boxShadow: "0px 52px 96px rgba(0,0,0,0.25)" }}
-          />
-        </motion.div>
+        <div className="w-[50%] flex items-center justify-end">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", damping: 20, stiffness: 100, delay: 0.3 }}
+          >
+            <Image
+              src={heroPhoneMockup}
+              alt="Worldcom Finance mobile app"
+              width={837}
+              height={963}
+              priority
+              style={{ boxShadow: "0px 52px 96px rgba(0,0,0,0.25)" }}
+            />
+          </motion.div>
+        </div>
       </div>
     </section>
   );
