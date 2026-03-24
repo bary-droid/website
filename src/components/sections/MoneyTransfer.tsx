@@ -38,7 +38,7 @@ const cards = [
 
 export default function MoneyTransfer() {
   return (
-    <section className="relative w-full bg-gray-900 py-24">
+    <section className="relative w-full bg-gray-900 py-24 min-h-[1080px]">
       <div className="max-w-[1556px] mx-auto">
         {/* Title */}
         <m.div

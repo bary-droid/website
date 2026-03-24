@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   title: "Worldcom Finance — Cross-Border Financial Solutions",
   description:
     "Streamline your global finances with our cross-border solutions. Money transfers, business solutions, and WPay Card.",
+  openGraph: {
+    title: "Worldcom Finance — Cross-Border Financial Solutions",
+    description: "Streamline your global finances with our cross-border solutions.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

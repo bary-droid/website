@@ -12,7 +12,7 @@ const glassCards = [
 
 export default function NewApplication() {
   return (
-    <section className="relative w-full bg-gray-900 py-0">
+    <section className="relative w-full bg-gray-900 py-0 min-h-[1350px]">
       <div className="max-w-[1556px] mx-auto relative h-[1172px]">
         {/* Title */}
         <m.h2

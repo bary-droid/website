@@ -47,7 +47,8 @@
       "Bash(npx tsc:*)",
       "Bash(git init:*)",
       "Bash(gh pr:*)",
-      "Bash(git fetch:*)"
+      "Bash(git fetch:*)",
+      "Bash(git push:*)"
     ]
   }
 }

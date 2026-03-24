@@ -24,7 +24,7 @@ export default function Partners() {
   return (
     <section className="py-16">
       <div className="max-w-[1556px] mx-auto flex flex-col items-center gap-16">
-        <m.p
+        <m.h2
           className="font-medium text-[24px] text-text-primary text-center whitespace-nowrap"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export default function Partners() {
           transition={{ duration: 0.5 }}
         >
           Trusted by Leading Financial Institutions Worldwide
-        </m.p>
+        </m.h2>
 
         <div className="w-full flex items-center justify-between">
           {partners.map((partner, i) => (
