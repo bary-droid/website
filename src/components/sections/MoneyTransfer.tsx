@@ -88,8 +88,8 @@ export default function MoneyTransfer() {
                 }}
               />
 
-              {/* Text */}
-              <div className="absolute bottom-[40px] left-[26px] right-[26px]">
+              {/* Text — title pinned at fixed top position */}
+              <div className="absolute left-[26px] right-[26px]" style={{ top: 370 }}>
                 <h3 className="font-bold text-[24px] text-white mb-2">
                   {card.title}
                 </h3>
