@@ -34,7 +34,7 @@ export default function Header() {
         </div>
 
         {/* Right side */}
-        <div className="flex items-center gap-6">
+        <nav aria-label="Main navigation" className="flex items-center gap-6">
           <button type="button" aria-label="Login banking" className="flex items-center gap-1">
             <Image src={iconLock} alt="" width={24} height={24} unoptimized />
             <span className="font-semibold text-[16px] leading-[20px] text-text-primary w-[120px] text-center">
@@ -45,7 +45,7 @@ export default function Header() {
             <span className="font-semibold text-[16px] leading-[20px] text-text-primary">Menu</span>
             <Image src={iconMenu} alt="" width={24} height={24} unoptimized />
           </button>
-        </div>
+        </nav>
       </div>
     </header>
   );

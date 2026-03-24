@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { appPhoneMockup, glassLightBlob } from "@/lib/assets";
 
 const glassCards = [
@@ -15,7 +15,7 @@ export default function NewApplication() {
     <section className="relative w-full bg-gray-900 py-0">
       <div className="max-w-[1556px] mx-auto relative h-[1172px]">
         {/* Title */}
-        <motion.h2
+        <m.h2
           className="font-medium text-[64px] leading-[72px] text-white text-center pt-0 relative z-10"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ export default function NewApplication() {
           transition={{ duration: 0.6 }}
         >
           New Application!
-        </motion.h2>
+        </m.h2>
 
         {/* Phone mockup - base layer */}
         <div className="absolute left-[135px] top-[71px] w-[1325px] h-[872px]">
@@ -75,8 +75,8 @@ export default function NewApplication() {
 
         {/* Glassmorphism cards */}
         {glassCards.map((card, i) => (
-          <motion.div
-            key={i}
+          <m.div
+            key={card.text[0]}
             className="absolute w-[256px] h-[125px] rounded-[16px] backdrop-blur-[16px] overflow-hidden border border-transparent z-10 hover:border-white/20 transition-colors duration-200"
             style={{
               left: card.left,
@@ -114,7 +114,7 @@ export default function NewApplication() {
                 ))}
               </p>
             </div>
-          </motion.div>
+          </m.div>
         ))}
       </div>
     </section>

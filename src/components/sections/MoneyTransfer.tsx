@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import {
   transferCard1,
   transferCard2,
@@ -41,7 +41,7 @@ export default function MoneyTransfer() {
     <section className="relative w-full bg-gray-900 py-24">
       <div className="max-w-[1556px] mx-auto">
         {/* Title */}
-        <motion.div
+        <m.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,12 +57,12 @@ export default function MoneyTransfer() {
             With Worldcom Finance&apos;s technology, you can securely transfer money to a wide
             range of destinations worldwide at highly competitive rates.
           </p>
-        </motion.div>
+        </m.div>
 
         {/* Cards */}
         <div className="grid grid-cols-4 gap-6">
           {cards.map((card, i) => (
-            <motion.div
+            <m.div
               key={card.title}
               className="relative h-[570px] rounded-[24px] overflow-hidden group cursor-pointer"
               initial={{ opacity: 0, y: 60 }}
@@ -97,7 +97,7 @@ export default function MoneyTransfer() {
                   {card.description}
                 </p>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

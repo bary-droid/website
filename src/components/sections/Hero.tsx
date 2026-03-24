@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Button from "@/components/ui/Button";
 import { heroBackground, heroPhoneMockup } from "@/lib/assets";
 
@@ -36,47 +36,48 @@ export default function Hero() {
         {/* Text content - left side */}
         <div className="w-[50%] shrink-0">
           <h1 className="text-[96px] font-extrabold leading-normal text-text-primary">
-            <motion.span
+            <m.span
               className="block"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               Cross-Border
-            </motion.span>
-            <motion.span
+            </m.span>
+            <m.span
               className="block"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
             >
               Financial Solutions
-            </motion.span>
+            </m.span>
           </h1>
 
-          <motion.p
+          <m.p
             className="text-[24px] leading-[30px] tracking-[0.1px] text-text-primary text-left mt-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
           >
             Streamline your global finances with our cross-border solutions.
-          </motion.p>
+          </m.p>
 
-          <motion.div
+          <m.div
             className="mt-6"
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
           >
             <Button>Let&apos;s get started</Button>
-          </motion.div>
+          </m.div>
         </div>
       </div>
 
       {/* Phone mockup - absolutely positioned, extending past right edge */}
-      <motion.div
+      <m.div
         className="absolute top-1/2 -translate-y-1/2 right-[-168px]"
+        style={{ boxShadow: "0px 52px 96px rgba(0,0,0,0.25)" }}
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ type: "spring", damping: 20, stiffness: 100, delay: 0.3 }}
@@ -88,7 +89,7 @@ export default function Hero() {
           height={963}
           priority
         />
-      </motion.div>
+      </m.div>
     </section>
   );
 }

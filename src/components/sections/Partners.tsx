@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import {
   partner1,
   partner2,
@@ -24,7 +24,7 @@ export default function Partners() {
   return (
     <section className="py-16">
       <div className="max-w-[1556px] mx-auto flex flex-col items-center gap-16">
-        <motion.p
+        <m.p
           className="font-medium text-[24px] text-text-primary text-center whitespace-nowrap"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,11 +32,11 @@ export default function Partners() {
           transition={{ duration: 0.5 }}
         >
           Trusted by Leading Financial Institutions Worldwide
-        </motion.p>
+        </m.p>
 
         <div className="w-full flex items-center justify-between">
           {partners.map((partner, i) => (
-            <motion.div
+            <m.div
               key={partner.alt}
               className={partner.alt === "PNB" ? "overflow-hidden" : ""}
               initial={{ opacity: 0 }}
@@ -52,7 +52,7 @@ export default function Partners() {
                 className="object-contain"
                 style={{ width: partner.width, height: partner.height }}
               />
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

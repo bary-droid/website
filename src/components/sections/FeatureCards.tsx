@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { featureDigitalWallet, featureSimTopup } from "@/lib/assets";
 
 const features = [
@@ -24,7 +24,7 @@ export default function FeatureCards() {
     <section className="py-16">
       <div className="max-w-[1556px] mx-auto grid grid-cols-2 gap-6">
         {features.map((feature, i) => (
-          <motion.div
+          <m.div
             key={feature.title}
             className="bg-white rounded-[24px] h-[300px] flex items-center p-8 gap-6"
             initial={{ opacity: 0, y: 40 }}
@@ -47,7 +47,7 @@ export default function FeatureCards() {
                 {feature.description}
               </p>
             </div>
-          </motion.div>
+          </m.div>
         ))}
       </div>
     </section>

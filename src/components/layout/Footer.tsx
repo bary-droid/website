@@ -19,7 +19,7 @@ export default function Footer() {
       <footer className="py-16">
         <div className="max-w-[1556px] mx-auto">
           {/* Main footer content - 4 columns */}
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Column 1: Hours */}
             <div>
               <h3 className="font-bold text-[24px] text-text-primary mb-4">
@@ -40,15 +40,15 @@ export default function Footer() {
               <div className="flex flex-col gap-6">
                 <div className="flex items-center gap-2">
                   <Image src={iconMail} alt="" width={24} height={24} unoptimized />
-                  <span className="text-[16px] leading-[24px] text-text-grey">
+                  <a href="mailto:cs@worldcomfinance.com" className="text-[16px] leading-[24px] text-text-grey">
                     cs@worldcomfinance.com
-                  </span>
+                  </a>
                 </div>
                 <div className="flex items-center gap-2">
                   <Image src={iconPhone} alt="" width={24} height={24} unoptimized />
-                  <span className="text-[16px] leading-[24px] text-text-grey">
+                  <a href="tel:03-900-9823" className="text-[16px] leading-[24px] text-text-grey">
                     03-900-9823
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -59,13 +59,13 @@ export default function Footer() {
                 Social media
               </h3>
               <div className="flex items-center gap-4">
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
                   <Image src={socialFacebook} alt="Facebook" width={64} height={64} unoptimized />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
                   <Image src={socialInstagram} alt="Instagram" width={64} height={64} unoptimized />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
                   <Image src={socialLinkedin} alt="LinkedIn" width={64} height={64} unoptimized />
                 </a>
               </div>
@@ -84,7 +84,7 @@ export default function Footer() {
                 />
               </div>
               <div className="flex items-center gap-3">
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on App Store">
+                <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer" aria-label="Download on App Store">
                   <Image
                     src={badgeAppStore}
                     alt="Download on App Store"
@@ -94,7 +94,7 @@ export default function Footer() {
                     style={{ width: 120, height: 40 }}
                   />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on Google Play">
+                <a href="https://play.google.com" target="_blank" rel="noopener noreferrer" aria-label="Download on Google Play">
                   <Image
                     src={badgeGooglePlay}
                     alt="Get it on Google Play"
@@ -114,8 +114,8 @@ export default function Footer() {
           {/* Legal row */}
           <div className="flex items-center justify-between text-[16px] leading-[24px] text-text-grey">
             <div className="flex gap-10">
-              <a href="#" className="cursor-pointer hover:underline">Privacy Policy</a>
-              <a href="#" className="cursor-pointer hover:underline">Terms &amp; Conditions</a>
+              <a href="/privacy-policy" className="cursor-pointer hover:underline">Privacy Policy</a>
+              <a href="/terms-and-conditions" className="cursor-pointer hover:underline">Terms &amp; Conditions</a>
             </div>
             <p>&copy;WIC Worldcom Finance LTD, Licenses No: 57533, 63141</p>
           </div>
