@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"\\(Get-Content ''C:\\\\Users\\\\BarYizhakChen\\\\.claude\\\\projects\\\\C--Website\\\\b58c33ff-563a-4315-8832-f69a6e9ae727\\\\tool-results\\\\mcp-5c279c77-6ca5-48a1-a9f7-f33f39542453-get_metadata-1774351739583.txt'' -Raw\\).Substring\\(0, 3000\\)\")",
+      "Bash(powershell -Command \"Select-String -Path ''C:\\\\Users\\\\BarYizhakChen\\\\.claude\\\\projects\\\\C--Website\\\\b58c33ff-563a-4315-8832-f69a6e9ae727\\\\tool-results\\\\mcp-5c279c77-6ca5-48a1-a9f7-f33f39542453-get_metadata-1774351739583.txt'' -Pattern ''frame id'' -AllMatches | Select-Object -First 1 | ForEach-Object { $_Line.Substring\\(0, [Math]::Min\\(2000, $_Line.Length\\)\\) }\")",
+      "Bash(grep -o 'name=\\\\\\\\\"\"\"\"[^\"\"\"\"\\\\\\\\]*\\\\\\\\\"\"\"\"' \"C:/Users/BarYizhakChen/.claude/projects/C--Website/b58c33ff-563a-4315-8832-f69a6e9ae727/tool-results/mcp-5c279c77-6ca5-48a1-a9f7-f33f39542453-get_metadata-1774351739583.txt\")",
+      "Bash(grep -o 'id=\\\\\\\\\"\"\"\"[0-9:]*\\\\\\\\\"\"\"\" name=\\\\\\\\\"\"\"\"[^\\\\\\\\]*\\\\\\\\\"\"\"\"' \"C:/Users/BarYizhakChen/.claude/projects/C--Website/b58c33ff-563a-4315-8832-f69a6e9ae727/tool-results/mcp-5c279c77-6ca5-48a1-a9f7-f33f39542453-get_metadata-1774351739583.txt\")",
+      "Bash(grep -o 'id=\\\\\\\\\"\"\"\"[0-9:]*\\\\\\\\\"\"\"\" name=\\\\\\\\\"\"\"\"[^\\\\\\\\]*\\\\\\\\\"\"\"\" x=\\\\\\\\\"\"\"\"[^\\\\\\\\]*\\\\\\\\\"\"\"\" y=\\\\\\\\\"\"\"\"[^\\\\\\\\]*\\\\\\\\\"\"\"\" width=\\\\\\\\\"\"\"\"[^\\\\\\\\]*\\\\\\\\\"\"\"\"' \"C:/Users/BarYizhakChen/.claude/projects/C--Website/b58c33ff-563a-4315-8832-f69a6e9ae727/tool-results/mcp-5c279c77-6ca5-48a1-a9f7-f33f39542453-get_metadata-1774351739583.txt\")",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --turbopack --yes)",
+      "Bash(npx create-next-app@latest ./temp-scaffold --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --turbopack --yes)",
+      "Bash(shopt -s dotglob)",
+      "Bash(cp -r temp-scaffold/* temp-scaffold/.* .)",
+      "Bash(rm -rf temp-scaffold)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
