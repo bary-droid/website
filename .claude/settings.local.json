@@ -44,7 +44,8 @@
       "Bash(where node:*)",
       "Bash(where npx:*)",
       "Bash(where npm:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(git init:*)"
     ]
   }
 }

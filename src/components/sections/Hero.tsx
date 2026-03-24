@@ -70,25 +70,23 @@ export default function Hero() {
             <Button>Let&apos;s get started</Button>
           </motion.div>
         </div>
-
-        {/* Phone mockup - right side */}
-        <div className="w-[50%] flex items-center justify-end">
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ type: "spring", damping: 20, stiffness: 100, delay: 0.3 }}
-          >
-            <Image
-              src={heroPhoneMockup}
-              alt="Worldcom Finance mobile app"
-              width={837}
-              height={963}
-              priority
-              style={{ boxShadow: "0px 52px 96px rgba(0,0,0,0.25)" }}
-            />
-          </motion.div>
-        </div>
       </div>
+
+      {/* Phone mockup - absolutely positioned, extending past right edge */}
+      <motion.div
+        className="absolute top-1/2 -translate-y-1/2 right-[-168px]"
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ type: "spring", damping: 20, stiffness: 100, delay: 0.3 }}
+      >
+        <Image
+          src={heroPhoneMockup}
+          alt="Worldcom Finance mobile app"
+          width={837}
+          height={963}
+          priority
+        />
+      </motion.div>
     </section>
   );
 }
