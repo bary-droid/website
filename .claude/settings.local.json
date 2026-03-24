@@ -14,7 +14,32 @@
       "Bash(npm install:*)",
       "Bash(npm run:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(curl -sL -o hero-background.png \"https://www.figma.com/api/mcp/asset/eab2053c-7caa-46ec-b7d1-9aa9aa10ba3f\")",
+      "Bash(curl -sL -o hero-phone-mockup.png \"https://www.figma.com/api/mcp/asset/979f45db-3ae5-492f-aecb-e708fbd13da7\")",
+      "Bash(curl -sL -o partner-1.png \"https://www.figma.com/api/mcp/asset/3153f1e2-da47-41e2-953f-98ff4ad245fb\")",
+      "Bash(curl -sL -o partner-2.png \"https://www.figma.com/api/mcp/asset/739481be-60fc-4e30-9ef1-a2b2e01cdf88\")",
+      "Bash(curl -sL -o partner-3.png \"https://www.figma.com/api/mcp/asset/036e3d10-efe0-471f-be0b-7545b2a8371e\")",
+      "Bash(curl -sL -o transfer-card-1.png \"https://www.figma.com/api/mcp/asset/abeb3421-4e96-49c6-a330-50f895c5d40d\")",
+      "Bash(curl -sL -o transfer-card-2.png \"https://www.figma.com/api/mcp/asset/98512d2b-2086-4020-b226-9aed5229b777\")",
+      "Bash(curl -sL -o transfer-card-3.png \"https://www.figma.com/api/mcp/asset/8083ae18-9c0f-4e61-84c1-f7733d3075ac\")",
+      "Bash(curl -sL -o transfer-card-4.png \"https://www.figma.com/api/mcp/asset/af7bacba-df86-4770-abfd-e7636762f658\")",
+      "Bash(curl -sL -o business-illustration.png \"https://www.figma.com/api/mcp/asset/4bface3b-570f-4fd0-9829-1c20e59e1fbd\")",
+      "Bash(curl -sL -o wpay-cards.png \"https://www.figma.com/api/mcp/asset/a8a69819-0445-4e45-968f-3b270b5d3214\")",
+      "Bash(curl -sL -o logo-worldcom.png \"https://www.figma.com/api/mcp/asset/d552ef2a-9705-4353-a462-75150ae25ff5\")",
+      "Bash(curl -sL -o logo-worldcom-footer.png \"https://www.figma.com/api/mcp/asset/edbaa7b3-4ae3-4896-8ffb-789e728065fe\")",
+      "Bash(curl -sL -o icon-menu.svg \"https://www.figma.com/api/mcp/asset/c348ea12-8ead-411c-94df-376de3ea7cdc\")",
+      "Bash(curl -sL -o icon-lock.svg \"https://www.figma.com/api/mcp/asset/b43333df-db5f-48ff-91f8-b9a75ba4b1de\")",
+      "Bash(curl -sL -o client-logo-1.png \"https://www.figma.com/api/mcp/asset/3f0db5b0-80c7-47dd-afea-037e6aba8fe5\")",
+      "Bash(curl -sL -o client-logo-2.png \"https://www.figma.com/api/mcp/asset/9c2adbc3-803c-450b-b368-79cdf18d7907\")",
+      "Bash(curl -sL -o client-holon.png \"https://www.figma.com/api/mcp/asset/54379281-ccbb-4de9-affa-2fb5aa31648e\")",
+      "Bash(curl -sL -o client-logo-3.png \"https://www.figma.com/api/mcp/asset/47614404-51e6-4a76-968e-e5d220cc5973\")",
+      "Bash(curl -sL -o client-logo-4.png \"https://www.figma.com/api/mcp/asset/f2b70e80-5111-46fb-a937-24e9dd58f9bd\")",
+      "Bash(curl -sL -o glass-light-blob.png \"https://www.figma.com/api/mcp/asset/b7b3355b-246e-4e82-b324-404219f47eef\")",
+      "Bash(curl -sL -o logo-max.png \"https://www.figma.com/api/mcp/asset/9e10a556-eb70-4d59-913e-04ddae3f9e8d\")",
+      "Bash(curl -sL -o logo-bank-jerusalem.png \"https://www.figma.com/api/mcp/asset/cd28cbec-23c2-4ad3-8131-4c5c206257ba\")",
+      "Bash(curl -sL -o social-facebook.png \"https://www.figma.com/api/mcp/asset/482bff0f-1d79-4ae8-86dc-f4a4cace6601\")",
+      "Bash(curl -sL -o social-instagram.png \"https://www.figma.com/api/mcp/asset/10a171a5-cfe7-483d-865a-3aa7868fad08\")"
     ]
   }
 }
