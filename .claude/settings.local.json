@@ -48,7 +48,9 @@
       "Bash(git init:*)",
       "Bash(gh pr:*)",
       "Bash(git fetch:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/27c07f7b-466f-48cb-bbd2-53afe5d6ad61\" -o public/images/logo-max.svg)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/34a583d2-f0c5-44f4-89d7-3e696acd1376\" -o public/images/logo-bank-jerusalem-mask.png)"
     ]
   }
 }

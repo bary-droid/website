@@ -3,7 +3,7 @@
 import Image from "next/image";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import Button from "@/components/ui/Button";
-import { wpayCards, logoMax, logoBankJerusalem } from "@/lib/assets";
+import { wpayCards, logoMax } from "@/lib/assets";
 
 export default function WPayCard() {
   return (
@@ -23,7 +23,7 @@ export default function WPayCard() {
         {/* Right - Text content */}
         <AnimatedSection direction="right" className="flex-1 pt-[102px] pl-16">
           <div className="max-w-[762px] flex flex-col gap-8">
-            <h2 className="font-medium text-[64px] leading-[72px] text-text-primary text-center">
+            <h2 className="font-medium text-[64px] leading-[72px] text-text-primary">
               WPay Card
             </h2>
             <p className="text-[18px] leading-[24px] text-text-primary max-w-[602px]">
@@ -40,13 +40,21 @@ export default function WPayCard() {
                 style={{ width: 68, height: 18 }}
                 unoptimized
               />
-              <Image
-                src={logoBankJerusalem}
-                alt="Bank of Jerusalem"
-                width={169}
-                height={19}
-                className="object-contain"
-                style={{ width: 169, height: 19 }}
+              {/* Bank of Jerusalem — uses mask-image to render as solid black */}
+              <div
+                className="bg-black"
+                style={{
+                  width: 169,
+                  height: 19,
+                  maskImage: "url(/images/logo-bank-jerusalem-mask.png)",
+                  maskSize: "169px 19px",
+                  maskRepeat: "no-repeat",
+                  WebkitMaskImage: "url(/images/logo-bank-jerusalem-mask.png)",
+                  WebkitMaskSize: "169px 19px",
+                  WebkitMaskRepeat: "no-repeat",
+                }}
+                role="img"
+                aria-label="Bank of Jerusalem"
               />
             </div>
             <Button>Order wPay card</Button>
