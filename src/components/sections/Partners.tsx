@@ -34,26 +34,50 @@ export default function Partners() {
           Trusted by Leading Financial Institutions Worldwide
         </m.h2>
 
-        <div className="w-full flex items-center justify-between">
-          {partners.map((partner, i) => (
-            <m.div
-              key={partner.alt}
-              className={partner.alt === "PNB" ? "overflow-hidden" : ""}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-            >
-              <Image
-                src={partner.src}
-                alt={partner.alt}
-                width={partner.width}
-                height={partner.height}
-                className="object-contain"
-                style={{ width: partner.width, height: partner.height }}
-              />
-            </m.div>
-          ))}
+        {/* Infinite scrolling marquee */}
+        <div className="w-full overflow-hidden relative">
+          {/* Fade edges */}
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-page-bg to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-page-bg to-transparent z-10 pointer-events-none" />
+
+          <div className="flex animate-marquee">
+            {/* First set */}
+            <div className="flex items-center gap-24 shrink-0 pr-24">
+              {partners.map((partner) => (
+                <div
+                  key={partner.alt}
+                  className={`opacity-50 hover:opacity-100 transition-opacity duration-300 shrink-0 ${partner.alt === "PNB" ? "overflow-hidden" : ""}`}
+                >
+                  <Image
+                    src={partner.src}
+                    alt={partner.alt}
+                    width={partner.width}
+                    height={partner.height}
+                    className="object-contain"
+                    style={{ width: partner.width, height: partner.height }}
+                  />
+                </div>
+              ))}
+            </div>
+            {/* Duplicate set for seamless loop */}
+            <div className="flex items-center gap-24 shrink-0 pr-24" aria-hidden="true">
+              {partners.map((partner) => (
+                <div
+                  key={`dup-${partner.alt}`}
+                  className={`opacity-50 hover:opacity-100 transition-opacity duration-300 shrink-0 ${partner.alt === "PNB" ? "overflow-hidden" : ""}`}
+                >
+                  <Image
+                    src={partner.src}
+                    alt=""
+                    width={partner.width}
+                    height={partner.height}
+                    className="object-contain"
+                    style={{ width: partner.width, height: partner.height }}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
