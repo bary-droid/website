@@ -35,22 +35,24 @@ export default function Hero() {
       <div className="relative max-w-[1920px] mx-auto px-[160px] h-full flex items-center">
         {/* Text content - left side */}
         <div className="w-[50%] shrink-0">
-          <motion.h1
-            className="text-[96px] font-extrabold leading-normal text-text-primary"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            Cross-Border
-          </motion.h1>
-          <motion.h1
-            className="text-[96px] font-extrabold leading-normal text-text-primary"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-          >
-            Financial Solutions
-          </motion.h1>
+          <h1 className="text-[96px] font-extrabold leading-normal text-text-primary">
+            <motion.span
+              className="block"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              Cross-Border
+            </motion.span>
+            <motion.span
+              className="block"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            >
+              Financial Solutions
+            </motion.span>
+          </h1>
 
           <motion.p
             className="text-[24px] leading-[30px] tracking-[0.1px] text-text-primary text-left mt-6"

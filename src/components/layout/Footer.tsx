@@ -59,9 +59,15 @@ export default function Footer() {
                 Social media
               </h3>
               <div className="flex items-center gap-4">
-                <Image src={socialFacebook} alt="Facebook" width={64} height={64} unoptimized />
-                <Image src={socialInstagram} alt="Instagram" width={64} height={64} unoptimized />
-                <Image src={socialLinkedin} alt="LinkedIn" width={64} height={64} unoptimized />
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
+                  <Image src={socialFacebook} alt="Facebook" width={64} height={64} unoptimized />
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page">
+                  <Image src={socialInstagram} alt="Instagram" width={64} height={64} unoptimized />
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page">
+                  <Image src={socialLinkedin} alt="LinkedIn" width={64} height={64} unoptimized />
+                </a>
               </div>
             </div>
 
@@ -78,22 +84,26 @@ export default function Footer() {
                 />
               </div>
               <div className="flex items-center gap-3">
-                <Image
-                  src={badgeAppStore}
-                  alt="Download on App Store"
-                  width={120}
-                  height={40}
-                  className="object-contain"
-                  style={{ width: 120, height: 40 }}
-                />
-                <Image
-                  src={badgeGooglePlay}
-                  alt="Get it on Google Play"
-                  width={135}
-                  height={40}
-                  className="object-contain"
-                  style={{ width: 135, height: 40 }}
-                />
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on App Store">
+                  <Image
+                    src={badgeAppStore}
+                    alt="Download on App Store"
+                    width={120}
+                    height={40}
+                    className="object-contain"
+                    style={{ width: 120, height: 40 }}
+                  />
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Download on Google Play">
+                  <Image
+                    src={badgeGooglePlay}
+                    alt="Get it on Google Play"
+                    width={135}
+                    height={40}
+                    className="object-contain"
+                    style={{ width: 135, height: 40 }}
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -104,8 +114,8 @@ export default function Footer() {
           {/* Legal row */}
           <div className="flex items-center justify-between text-[16px] leading-[24px] text-text-grey">
             <div className="flex gap-10">
-              <span className="cursor-pointer hover:underline">Privacy Policy</span>
-              <span className="cursor-pointer hover:underline">Terms &amp; Conditions</span>
+              <a href="#" className="cursor-pointer hover:underline">Privacy Policy</a>
+              <a href="#" className="cursor-pointer hover:underline">Terms &amp; Conditions</a>
             </div>
             <p>&copy;WIC Worldcom Finance LTD, Licenses No: 57533, 63141</p>
           </div>

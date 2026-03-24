@@ -42,7 +42,7 @@ export default function BusinessSolutions() {
             <p className="font-medium text-[24px] text-text-primary">Our Clients</p>
             <div className="flex items-center justify-between w-full">
               {clientLogos.map((logo) => (
-                <img
+                <Image
                   key={logo.alt}
                   src={logo.src}
                   alt={logo.alt}
@@ -50,6 +50,7 @@ export default function BusinessSolutions() {
                   height={logo.height}
                   className="object-contain"
                   style={{ width: logo.width, height: 32 }}
+                  unoptimized
                 />
               ))}
             </div>

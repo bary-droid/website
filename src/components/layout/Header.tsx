@@ -23,9 +23,9 @@ export default function Header() {
     >
       <div className="max-w-[1920px] mx-auto px-6 py-8 flex items-center justify-between relative">
         {/* Language button */}
-        <button className="flex items-center gap-2 bg-white rounded-[20px] px-4 h-[40px]">
+        <button type="button" aria-label="Select language" className="flex items-center gap-2 bg-white rounded-[20px] px-4 h-[40px]">
           <span className="font-semibold text-[16px] leading-[20px] text-text-primary">EN</span>
-          <Image src={iconArrowDown} alt="Select language" width={24} height={24} unoptimized />
+          <Image src={iconArrowDown} alt="" width={24} height={24} unoptimized />
         </button>
 
         {/* Center logo */}
@@ -35,15 +35,15 @@ export default function Header() {
 
         {/* Right side */}
         <div className="flex items-center gap-6">
-          <button className="flex items-center gap-1">
+          <button type="button" aria-label="Login banking" className="flex items-center gap-1">
             <Image src={iconLock} alt="" width={24} height={24} unoptimized />
             <span className="font-semibold text-[16px] leading-[20px] text-text-primary w-[120px] text-center">
               Login banking
             </span>
           </button>
-          <button className="flex items-center gap-1">
+          <button type="button" aria-label="Open menu" className="flex items-center gap-1">
             <span className="font-semibold text-[16px] leading-[20px] text-text-primary">Menu</span>
-            <Image src={iconMenu} alt="Menu" width={24} height={24} unoptimized />
+            <Image src={iconMenu} alt="" width={24} height={24} unoptimized />
           </button>
         </div>
       </div>

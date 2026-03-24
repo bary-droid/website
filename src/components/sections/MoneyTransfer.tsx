@@ -50,8 +50,7 @@ export default function MoneyTransfer() {
         >
           <h2 className="font-medium text-[64px] leading-[72px] text-white">
             Money Transfer
-          </h2>
-          <h2 className="font-medium text-[64px] leading-[72px] text-white">
+            <br />
             Worldwide
           </h2>
           <p className="mt-6 text-[18px] leading-[24px] text-text-light-50 max-w-[923px] mx-auto">

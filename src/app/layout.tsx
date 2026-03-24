@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import MotionProvider from "@/components/ui/MotionProvider";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -15,9 +18,6 @@ export const metadata: Metadata = {
     "Streamline your global finances with our cross-border solutions. Money transfers, business solutions, and WPay Card.",
 };
 
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} font-[family-name:var(--font-roboto)] antialiased`}>
-        <Header />
-        {children}
-        <Footer />
+        <MotionProvider>
+          <Header />
+          {children}
+          <Footer />
+        </MotionProvider>
       </body>
     </html>
   );
