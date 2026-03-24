@@ -40,16 +40,14 @@ body {
   }
 }
 
-.animate-marquee {
+@utility animate-marquee {
   animation: marquee 30s linear infinite;
-}
 
-.animate-marquee:hover {
-  animation-play-state: paused;
-}
+  &:hover {
+    animation-play-state: paused;
+  }
 
-@media (prefers-reduced-motion: reduce) {
-  .animate-marquee {
+  @media (prefers-reduced-motion: reduce) {
     animation: none;
   }
 }
