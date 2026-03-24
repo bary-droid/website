@@ -88,8 +88,8 @@ export default function MoneyTransfer() {
                 }}
               />
 
-              {/* Text */}
-              <div className="absolute bottom-[40px] left-[26px] right-[26px]">
+              {/* Text — pinned to consistent bottom position */}
+              <div className="absolute bottom-0 left-0 right-0 h-[190px] flex flex-col justify-end px-[26px] pb-[40px]">
                 <h3 className="font-bold text-[24px] text-white mb-2">
                   {card.title}
                 </h3>
